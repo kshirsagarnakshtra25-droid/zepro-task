@@ -8,16 +8,18 @@ function App() {
   return (
     <Routes>
       <Route path="/login3" element={<Login3 />} />
+
       <Route path="/register3" element={<Register3 />} />
+
+      <Route
+        path="/passenger-details"
+        element={<PassengerDetails />}
+      />
 
       <Route
         path="*"
         element={<Navigate to="/login3" replace />}
       />
-      <Route
-  path="/passenger-details"
-  element={<PassengerDetails />}
-/>
     </Routes>
   );
 }
